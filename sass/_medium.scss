@@ -1,0 +1,49 @@
+.medium-6 {
+  flex-basis: 50%;
+}
+
+.limited {
+  max-width: 700px;
+  margin: auto;
+}
+
+.center {
+  justify-content: center;
+}
+
+.menu-spacer {
+  height: 3px;
+  border: none;
+  background-color: $secondary-one;
+  border-radius: 5px;
+}
+
+nav {
+  margin-top: 2vh;
+
+  button {
+    display: none;
+  }
+
+  ul {
+    li {
+      width: auto;
+      float: left;
+      a::after {
+        content: "\00b7";
+        float: right;
+        padding-left: 0.5rem;
+        color: $secondary-one;
+        font-size: 2rem;
+        line-height: 0.9rem;
+      }
+    }
+    li:last-child a::after {
+      display: none;
+    }
+  }
+  .menu-item {
+    font-size: 12px;
+    padding: 0.7rem 0.2rem;
+  }
+}

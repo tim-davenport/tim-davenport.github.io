@@ -1,0 +1,39 @@
+.large-3 {
+  flex-basis: 25%;
+}
+
+.limited {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.menu-spacer {
+  height: 5px;
+  border: none;
+  background-color: $secondary-one;
+  border-radius: 5px;
+}
+
+nav {
+  margin-top: 5vh;
+  ul {
+    li {
+      width: auto;
+      a::after {
+        content: "\00b7";
+        float: right;
+        padding-left: 2rem;
+        color: $secondary-one;
+        font-size: 2rem;
+        line-height: 1.35rem;
+      }
+    }
+    li:last-child a::after {
+      display: none;
+    }
+    .menu-item {
+      font-size: 18px;
+      padding: 0.7rem 1rem;
+    }
+  }
+}
