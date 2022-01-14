@@ -18,32 +18,38 @@
   border-radius: 5px;
 }
 
-nav {
-  margin-top: 2vh;
-
-  button {
-    display: none;
-  }
-
-  ul {
-    li {
-      width: auto;
-      float: left;
-      a::after {
-        content: "\00b7";
-        float: right;
-        padding-left: 0.5rem;
-        color: $secondary-one;
-        font-size: 2rem;
-        line-height: 0.9rem;
-      }
-    }
-    li:last-child a::after {
+.navcontainer {
+  nav {
+    width: 100%;
+    margin-top: 2vh;
+    button {
       display: none;
     }
+
+    ul {
+      li {
+        width: auto;
+        float: left;
+        a::after {
+          content: "\00b7";
+          float: right;
+          padding-left: 0.5rem;
+          color: $secondary-one;
+          font-size: 2rem;
+          line-height: 0.9rem;
+        }
+      }
+      li:last-child a::after {
+        display: none;
+      }
+    }
+    .menu-item {
+      font-size: 12px;
+      padding: 0.7rem 0.2rem;
+    }
   }
-  .menu-item {
-    font-size: 12px;
-    padding: 0.7rem 0.2rem;
+
+  .social-links-small {
+    display: none;
   }
 }
