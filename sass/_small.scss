@@ -42,11 +42,15 @@ footer h2 {
   nav {
     width: 60%;
     ul {
+      display: none;
       margin: 0;
       padding: 0;
       li {
         list-style-type: none;
       }
+    }
+    .open {
+      display: block;
     }
     .menu-item {
       font-family: "Concert One", cursive;
@@ -68,7 +72,7 @@ footer h2 {
   }
 
   .social-links-small {
-    margin: .5vh .5vh auto auto;
+    margin: 0.5vh 0.5vh auto auto;
     img {
       width: 1.4em;
     }
