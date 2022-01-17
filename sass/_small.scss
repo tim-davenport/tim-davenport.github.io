@@ -48,33 +48,50 @@ html {
   nav {
     width: 60%;
     ul {
-      display: none;
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: $secondary-one;
+      background-color: $secondary-one-opaque;
+      overflow-x: hidden;
+      transition: 0.5s;
       margin: 0;
       padding: 0;
       li {
         list-style-type: none;
       }
-    }
-    .open {
-      display: block;
+      li:last-child {
+        display: block;
+      }
     }
     .menu-item {
       font-family: "Roboto", cursive;
       font-weight: 400;
-      font-size: 12px;
-      color: $primary-two;
+      font-size: 16px;
+      color: $secondary-two;
       display: block;
       padding: 0.8rem 0;
       text-align: center;
       text-decoration: none;
     }
-    button#hamburgerBtn {
+    button#openMenuBtn {
       background: none;
       border: none;
       color: $secondary-one;
       font-size: 1.6rem;
       cursor: pointer;
-      padding: 0 30px 0 2vw;
+    }
+    button#closeMenuBtn {
+      position: absolute;
+      top: -10px;
+      right: 15px;
+      font-size: 3rem;
+      background: none;
+      border: none;
+      color: $secondary-two;
     }
   }
 
@@ -86,7 +103,7 @@ html {
   }
 }
 
-hr {
+hr.menu-spacer {
   display: none;
 }
 

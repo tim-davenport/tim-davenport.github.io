@@ -7,7 +7,8 @@
   max-width: 700px;
 }
 
-.menu-spacer {
+hr.menu-spacer {
+  display:block;
   height: 3px;
   border: none;
   background-color: $secondary-one;
@@ -23,24 +24,34 @@
     }
 
     ul {
-      display: block;
+      height: auto;
+      width: 100%;
+      position: relative;
+      z-index: 0;
+      background-color: inherit;
+      transition: none;
+      overflow: hidden;
       li {
         width: auto;
         float: left;
         a::after {
           content: "\00b7";
           float: right;
-          padding-left: 0.5rem;
+          padding-left: 0.6rem;
           color: $secondary-one;
           font-size: 2rem;
           line-height: 0.9rem;
         }
       }
-      li:last-child a::after {
+      li:last-child {
+        display: none;
+      }
+      li:nth-child(5) a::after {
         display: none;
       }
     }
     .menu-item {
+      color: $primary-two;
       font-size: 13px;
       padding: 0.7rem 0.2rem;
     }
