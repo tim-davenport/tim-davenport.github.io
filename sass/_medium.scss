@@ -1,14 +1,10 @@
-.medium-6 {
-  flex-basis: 50%;
+@for $i from 1 through 12 {
+  $w:($i / 12) * 100%;
+  .medium-#{$i} {flex-basis: $w;}	
 }
 
 .limited {
   max-width: 700px;
-  margin: auto;
-}
-
-.center {
-  justify-content: center;
 }
 
 .menu-spacer {
@@ -21,12 +17,13 @@
 .navcontainer {
   nav {
     width: 100%;
-    margin-top: 2vh;
+    margin-top: 3.5vh;
     button {
       display: none;
     }
 
     ul {
+      display: block;
       li {
         width: auto;
         float: left;
@@ -44,12 +41,36 @@
       }
     }
     .menu-item {
-      font-size: 12px;
+      font-size: 13px;
       padding: 0.7rem 0.2rem;
     }
   }
 
   .social-links-small {
     display: none;
+  }
+}
+
+.about {
+  align-items: center;
+  border-left: 15px solid $primary-two;
+  margin-top: 4vh;
+  div:first-child {
+    padding-left: 1.5em;
+  }
+  div:nth-child(2) {
+    display: block;
+    img {
+      height: 200px;
+      border-radius: 8px;
+      filter:sepia(100%);
+      float: right;
+    }
+  }
+  .social-links {
+    img {
+      width: 1.6em;
+      margin: auto .2em auto .2em;
+    }
   }
 }
