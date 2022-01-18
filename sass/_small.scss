@@ -16,6 +16,11 @@ html {
     font-size: 52px;
     color: $primary-one;
   }
+  h2 {
+    font-family: "Concert One", cursive;
+    font-size: 36px;
+    color: $secondary-one;
+  }
   p {
     font-size: 15px;
     line-height: 165%;
@@ -110,5 +115,23 @@ hr.menu-spacer {
 .about {
   div:nth-child(2) {
     display: none;
+  }
+}
+
+.climate-change {
+  display: block;
+  margin-top: 4vh;
+  position: relative;
+  div:last-child {
+    position: absolute;
+    top: 160px;
+    z-index: -1;
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+      opacity: 0.2;
+    }
   }
 }
