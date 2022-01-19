@@ -9,5 +9,4 @@ const openMenuBtn = document.getElementById("openMenuBtn");
 openMenuBtn.onclick = showMenu;
 
 const closeMenuBtn = document.getElementById("closeMenuBtn");
-console.dir(closeMenuBtn);
 closeMenuBtn.onclick = closeMenu;

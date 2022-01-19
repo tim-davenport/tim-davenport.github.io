@@ -101,3 +101,21 @@ hr.menu-spacer {
     }
   }
 }
+
+.technologies {
+  display: flex;
+  .logos {
+    position: inherit;
+    margin: auto;
+    .logo {
+      position: inherit;
+      display: block;
+      width: 20px;
+      margin: auto;
+      padding: 30px;
+    }
+  }
+  #logo-nav {
+    display: none;
+  }
+}
