@@ -30,7 +30,6 @@ html {
 .row {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
 }
 
 .center {
@@ -114,6 +113,9 @@ hr.menu-spacer {
 
 .about {
   div:nth-child(2) {
+    display: none;
+  }
+  .social-links {
     display: none;
   }
 }
@@ -247,6 +249,18 @@ hr.menu-spacer {
     justify-content: space-between;
     .language-logo {
       width: 45px;
+    }
+  }
+}
+
+.connect {
+  margin-top: $section-margin-top;
+  margin-bottom: 120px;
+  text-align: center;
+  .social-links-connect {
+    img {
+      width: 1.6em;
+      margin: auto .2em auto .2em;
     }
   }
 }
