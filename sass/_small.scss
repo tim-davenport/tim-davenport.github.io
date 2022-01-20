@@ -13,12 +13,12 @@ html {
   font-weight: 300;
   h1 {
     font-family: "Concert One", cursive;
-    font-size: 52px;
+    font-size: 44px;
     color: $primary-one;
   }
   h2 {
     font-family: "Concert One", cursive;
-    font-size: 36px;
+    font-size: 22px;
     color: $secondary-one;
   }
   p {
@@ -120,7 +120,7 @@ hr.menu-spacer {
 
 .climate-change {
   display: block;
-  margin-top: 4vh;
+  margin-top: $section-margin-top;
   position: relative;
   div:last-child {
     position: absolute;
@@ -137,14 +137,16 @@ hr.menu-spacer {
 }
 
 .technologies {
+  margin-top: $section-margin-top;
   display: block;
   text-align: center;
   .logos {
+    display: flex;
     justify-content: center;
     .logo {
       position: absolute;
       display: none;
-      max-width: 35vw;
+      width: 30vw;
     }
     .aws {
       margin-top: 20px;
@@ -159,7 +161,10 @@ hr.menu-spacer {
       margin-top: 17px;
     }
     .sentry {
-      margin-top: 25px;
+      margin-top: 30px;
+    }
+    .salesforce {
+      margin-top: 10px;
     }
     /* Fading animation */
     .fade {
@@ -231,6 +236,17 @@ hr.menu-spacer {
       .dot:hover {
         background-color: $secondary-two;
       }
+    }
+  }
+}
+
+.languages {
+  margin-top: $section-margin-top;
+  .language-logos {
+    display: flex;
+    justify-content: space-between;
+    .language-logo {
+      width: 45px;
     }
   }
 }
